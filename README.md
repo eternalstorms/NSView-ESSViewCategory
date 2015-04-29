@@ -45,4 +45,4 @@ The framework and code is provided as-is, but if you need help or have suggestio
 For other Open Source projects of mine, please visit http://www.eternalstorms.at/opensource
 
 # I'd like to hear from you
-If you use ESSSquareProgressIndicator in one of your projects, please be sure to [let me know](mailto:opensource@eternalstorms.at)! I'd love to hear about your apps and mention them here on this project page :) !!
+If you use NSView+ESSViewCategory in one of your projects, please be sure to [let me know](mailto:opensource@eternalstorms.at)! I'd love to hear about your apps and mention them here on this project page :) !!
