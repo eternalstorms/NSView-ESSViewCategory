@@ -28,10 +28,10 @@ Can be in a different xib file (for example, a NSViewController) or in the same 
 Once you have set up your views, either call the class method and pass fromView and toView as well as the other parameters or call the instance method on fromView.
 
 The class method:  
-+ (void)transitionFromView:(NSView *)fromView toView:(NSView *)toView withZoomingTransition:(ESSViewZoomTransition)transition duration:(CGFloat)duration completionHandler:(void (^)(void))completionHandler;
+`+ (void)transitionFromView:(NSView *)fromView toView:(NSView *)toView withZoomingTransition:(ESSViewZoomTransition)transition duration:(CGFloat)duration completionHandler:(void (^)(void))completionHandler;`
 
 The instance method:  
-- (void)transitionToView:(NSView *)toView withZoomingTransition:(ESSViewZoomTransition)transition duration:(CGFloat)duration completionHandler:(void (^)(void))completionHandler;
+`- (void)transitionToView:(NSView *)toView withZoomingTransition:(ESSViewZoomTransition)transition duration:(CGFloat)duration completionHandler:(void (^)(void))completionHandler;`
 
 Please refer to the sample project and/or the ([Blog Post]()) for more information.
 
