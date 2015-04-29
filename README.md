@@ -1,5 +1,5 @@
 # NSView+ESSViewCategory
-a category on NSView that simplifies zoom-transitioning between two NSViews, inspired by OS X 10.10.3's Photos.app ([Blog Post]())
+a category on NSView that simplifies zoom-transitioning between two NSViews, inspired by OS X 10.10.3's Photos.app ([Blog Post](https://eternalstorms.wordpress.com/?p=387))
 
 ![NSView+ESSViewCategory Zoom Transition Animation Example](http://eternalstorms.at/opensource/NSViewESSViewCategory/zoomtransition.gif "NSView+ESSViewCategory Zoom Transition Animation Example")
 
@@ -33,7 +33,7 @@ The class method:
 The instance method:  
 `- (void)transitionToView:(NSView *)toView withZoomingTransition:(ESSViewZoomTransition)transition duration:(CGFloat)duration completionHandler:(void (^)(void))completionHandler;`
 
-Please refer to the sample project and/or the ([Blog Post]()) for more information.
+Please refer to the sample project and/or the ([Blog Post](https://eternalstorms.wordpress.com/?p=387)) for more information.
 
 ## Requirements
 This code has been tested on OS X Yosemite 10.10.3. It might work with earlier versions of the operating system.  
@@ -45,4 +45,4 @@ The framework and code is provided as-is, but if you need help or have suggestio
 For other Open Source projects of mine, please visit http://www.eternalstorms.at/opensource
 
 # I'd like to hear from you
-If you use ESSSquareProgressIndicator in one of your projects, please [let me know](mailto:opensource@eternalstorms.at)! I'd love to hear about your apps and mention them here on this project page :) !!
+If you use ESSSquareProgressIndicator in one of your projects, please be sure to [let me know](mailto:opensource@eternalstorms.at)! I'd love to hear about your apps and mention them here on this project page :) !!
