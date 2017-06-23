@@ -48,15 +48,9 @@
 								   fromView.superview.frame.size.width-(widthDiff*2),
 								   fromView.superview.frame.size.height-(heightDiff*2));
 	
-	NSImageView *toImageView = [[NSImageView alloc] initWithFrame:initialToRect];
+	NSView *toImageView = [[NSView alloc] initWithFrame:initialToRect];
 	toImageView.wantsLayer = YES;
-	toImageView.image = toImage;
-	toImageView.imageAlignment = NSImageAlignCenter;
-	toImageView.imageScaling = NSImageScaleAxesIndependently;
-	toImageView.editable = NO;
-	toImageView.animates = NO;
-	toImageView.allowsCutCopyPaste = NO;
-	toImageView.imageFrameStyle = NSImageFrameNone;
+	toImageView.layer.contents = toImage;
 	toImageView.alphaValue = 0.0;
 	
 	toView.alphaValue = 0.0;
@@ -68,15 +62,9 @@
 	NSImage *fromImage = [[NSImage alloc] initWithSize:rep.size];
 	[fromImage addRepresentation:rep];
 	
-	NSImageView *fromImageView = [[NSImageView alloc] initWithFrame:fromView.frame];
+	NSView *fromImageView = [[NSView alloc] initWithFrame:fromView.frame];
 	fromImageView.wantsLayer = YES;
-	fromImageView.image = fromImage;
-	fromImageView.imageAlignment = NSImageAlignCenter;
-	fromImageView.imageScaling = NSImageScaleAxesIndependently;
-	fromImageView.editable = NO;
-	fromImageView.animates = NO;
-	fromImageView.allowsCutCopyPaste = NO;
-	fromImageView.imageFrameStyle = NSImageFrameNone;
+	fromImageView.layer.contents = fromImage;
 	
 	[fromView.superview addSubview:fromImageView positioned:NSWindowAbove relativeTo:nil];
 	[fromView.superview addSubview:toImageView positioned:NSWindowAbove relativeTo:nil];
@@ -128,3 +116,6 @@
 }
 
 @end
+
+
+
